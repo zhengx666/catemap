@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.seckill.dao.RestaurantDao">
+    <select id="queryAll" resultType="Restaurant">
+        select restaurant_id, restaurant_name, user_name,latitude,longitude,recommended_stars,recommended_reason,create_time
+        from restaurant
+    </select>
+</mapper>
